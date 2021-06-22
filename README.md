@@ -3,7 +3,8 @@ Python Game Development - Create Flappy Bird With Pygame 2.0.1
 
 Flappy Bird Update April (1.5.0)
 
-Developer:MohammadReza.D
+Developer:MohammadReza.D  
+
 Company >>> Every Developer
 ==========================
 
