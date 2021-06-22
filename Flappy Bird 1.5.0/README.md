@@ -10,7 +10,7 @@ Programming language >>> [Python_3.9.1]
 Game library  ...... >>> [Pygame_2.0.1]
 
 Reccomended for <Windows , Macos , Linux>
-+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+
+______________________________________________________
 install Pygame :
 
 ```bash
@@ -39,7 +39,7 @@ ________________________________________________________________________________
 1. Clone the repository:
 
    ```bash
-   $ git clone https://github.com/Every-Developer/FlappyBird
+   $ git clone https://github.com/Every-Developer/Flappy_Bird
    ```
 
    or download as zip and extract.
