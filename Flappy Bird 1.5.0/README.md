@@ -1,11 +1,11 @@
-<<<<<<< HEAD
 # Flappy Bird
 Python Game Development - Create Flappy Bird With Pygame 2.0.1
-=======
+
 Flappy Bird Update April (1.5.0)
 
-(Developer:MohammadReza.D)
-Company >>> Every Developer
+Company:Every Developer  
+
+Developer >>> MohammadReza.D
 ==========================
 
 A Flappy Bird Clone made using [python-pygame][pygame]
@@ -14,7 +14,7 @@ Programming language >>> [Python_3.9.1]
 Game library  ...... >>> [Pygame_2.0.1]
 
 Reccomended for <Windows , Macos , Linux>
-______________________________________________________
+____________________________________________________
 install Pygame :
 
 ```bash
@@ -43,7 +43,7 @@ ________________________________________________________________________________
 1. Clone the repository:
 
    ```bash
-   $ git clone https://github.com/Every-Developer/Flappy_Bird
+   $ git clone https://github.com/Every-Developer/FlappyBird
    ```
 
    or download as zip and extract.
@@ -79,5 +79,3 @@ Line by line of codes This game was written by *[Mohammad Reza]* himself
 If you enjoyed the game or wanted to comment, I will be happy to send it to the following address
 
 ***Thanks for your Choise**
-
->>>>>>> 1c1849183e941e7fa4f3b3c351c49eb878530a52
