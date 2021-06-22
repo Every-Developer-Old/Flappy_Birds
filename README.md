@@ -76,7 +76,8 @@ Line by line of codes This game was written by *[Mohammad Reza]* himself
 [Python]: https://www.python.org
 [pygame]: http://www.pygame.org
 
-/////////////////////////////////////////////////////////////////////////////////////////////////
+![flappy-birds-amazon 0 1467743570 0](https://user-images.githubusercontent.com/84382544/122960941-28a08e80-d399-11eb-9259-6e0134b76cb3.jpg)
+
 
 If you enjoyed the game or wanted to comment, I will be happy to send it to the following address
 
