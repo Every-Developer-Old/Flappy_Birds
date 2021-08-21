@@ -1,7 +1,7 @@
 # Flappy Bird
 Python Game Development - Create Flappy Bird with Pygame 2.0.1
 
-Flappy Bird Update April (1.5.0)
+*Flappy Bird Update April (1.5.0)*
 
 Company:Every Developer  
 
@@ -83,4 +83,4 @@ Line by line of codes This game was written by *[Mohammad Reza]* himself
 
 If you enjoyed the game or wanted to comment, I will be happy to send it to the following address
 
-**Thanks for your choise**
+***Thanks for your choise***
