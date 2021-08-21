@@ -59,7 +59,7 @@ ________________________________________________________________________________
    $ pipenv run python flappy.py
    ```
 
-USEREEVENTS/Contrl = Use <kbd>K_UP</kbd> or <kbd>Space</kbd> key to play and <kbd>Esc</kbd> or <kbd>Exit</kbd> to Exit the game.
+USEREEVENTS/Contrl = Use <kbd>K_UP</kbd> or <kbd>Spacebar</kbd> key to play and <kbd>Esc</kbd> or <kbd>Exit</kbd> to Exit the game.
 
 ***Be sure to watch the video**
 
