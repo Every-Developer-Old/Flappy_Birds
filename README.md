@@ -25,7 +25,7 @@ install Pygame :
 pip install pygame
 ```
 
-For Convert Python files to EXE files install :
+For convert Python files to EXE files install :
 
 ```bash
 pip install pyinstaller
@@ -38,7 +38,7 @@ ________________________________________________________________________________
 2. Install Python 3.7.0 (Reccomended <Python 3.8.0>)for Windows 7 or earlier from >>>
 [here](https://www.python.org/downloads/)
 
-3. Install PyGame 1.9.x (Reccomended Pygame 2.0.1 or later) from >>>
+3. Install Pygame 1.9.x (Reccomended Pygame 2.0.1 or later) from >>>
 [here](http://www.pygame.org/download.shtml) or ***Pip install pygame** in terminal
 
 ______________________________________________________________________________________________________________
