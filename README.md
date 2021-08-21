@@ -9,7 +9,7 @@ Developer >>> MohammadReza.D
 ==========================
 
 ![Pipe_Bird_Logo](https://user-images.githubusercontent.com/84382544/122960555-c34c9d80-d398-11eb-9fda-76650e8cf2fb.png)
-About
+# About
 ______________________________________________________
 
 A Flappy Bird clone made using [python-pygame][pygame]
@@ -17,8 +17,9 @@ A Flappy Bird clone made using [python-pygame][pygame]
 Programming language >>> [Python_3.9.1]
 Game library  ...... >>> [Pygame_2.0.1]
 
-Installation
+# Installation
 ____________________________________________________
+****************************************************
 install Pygame :
 
 ```bash
@@ -31,7 +32,7 @@ For Convert Python files to EXE files install :
 pip install pyinstaller
 ```
 ______________________________________________________________________________________________________________
-**************************************************************************************************************
+
 1. Install Python 3.9.0 (Reccomended <Python 3.9.1> or later) for Windows 10 from >>>
 [here](https://www.python.org/downloads/) [***Note that Python 3.9.x cannot be used on Windows 7 or earlier**]
 
