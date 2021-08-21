@@ -30,6 +30,8 @@ For convert Python files to EXE files install :
 ```bash
 pip install pyinstaller
 ```
+
+for <Windows, Mac, Linux>
 ______________________________________________________________________________________________________________
 
 1. Install Python 3.9.0 (Reccomended <Python 3.9.1> or later) for Windows 10 from >>>
