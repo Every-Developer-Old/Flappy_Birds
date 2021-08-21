@@ -9,8 +9,8 @@ Developer >>> MohammadReza.D
 ==========================
 
 ![Pipe_Bird_Logo](https://user-images.githubusercontent.com/84382544/122960555-c34c9d80-d398-11eb-9fda-76650e8cf2fb.png)
+
 # About
-______________________________________________________
 
 A Flappy Bird clone made using [python-pygame][pygame]
 
@@ -18,8 +18,7 @@ Programming language >>> [Python_3.9.1]
 Game library  ...... >>> [Pygame_2.0.1]
 
 # Installation
-____________________________________________________
-****************************************************
+
 install Pygame :
 
 ```bash
@@ -84,4 +83,4 @@ Line by line of codes This game was written by *[Mohammad Reza]* himself
 
 If you enjoyed the game or wanted to comment, I will be happy to send it to the following address
 
-***Thanks for your choise**
+**Thanks for your choise**
