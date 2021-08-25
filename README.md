@@ -49,7 +49,7 @@ ________________________________________________________________________________
 1. Clone the repository:
 
    ```bash
-   $ git clone https://github.com/Every-Developer/Flappy_Bird
+   $ gh repo clone Every-Developer/Flappy_Bird
    ```
 
    or download as zip and extract.
