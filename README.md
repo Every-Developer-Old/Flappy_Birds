@@ -49,7 +49,7 @@ ________________________________________________________________________________
 1. Clone the repository:
 
    ```bash
-   $ gh repo clone Every-Developer/Flappy_Bird
+   gh repo clone Every-Developer/Flappy_Bird
    ```
 
    or download as zip and extract.
@@ -57,8 +57,7 @@ ________________________________________________________________________________
 1. In the root directory run
 
    ```bash
-   $ pipenv install
-   $ pipenv run python Flappy_Bird 1-3.py
+   pipenv run python Flappy_Bird 1-3.py
    ```
 
 Contrls = Use <kbd>K_UP</kbd> or <kbd>Spacebar</kbd> key to play and <kbd>Esc</kbd> or <kbd>Exit</kbd> to Exit the game.
