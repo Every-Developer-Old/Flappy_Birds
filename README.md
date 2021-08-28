@@ -57,7 +57,7 @@ ________________________________________________________________________________
 1. In the root directory run
 
    ```bash
-   run python Flappy_Bird.py
+   python Flappy_Bird.py
    ```
 
 
