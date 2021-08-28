@@ -8,7 +8,7 @@ by **Every Developer**
 Developer : MohammadReza.D
 ==========================
 
-![Pipe_Bird_Logo](https://user-images.githubusercontent.com/84382544/122960555-c34c9d80-d398-11eb-9fda-76650e8cf2fb.png)
+![Pipe_Bird_Logo](https://user-images.githubusercontent.com/84382544/131217714-c87c87d5-7d36-4991-8cbf-6e06d03687a6.png)
 
 # About
 
@@ -78,8 +78,7 @@ Line by line of codes This game was written by *[Mohammad Reza]* himself
 [Python]: https://www.python.org
 [pygame]: http://www.pygame.org
 
-![flappy-birds-amazon 0 1467743570 0](https://user-images.githubusercontent.com/84382544/122960941-28a08e80-d399-11eb-9259-6e0134b76cb3.jpg)
-
+![flappy-birds-amazon 0 1467743570 0](https://user-images.githubusercontent.com/84382544/131217676-8a61aed7-7fd2-4a8c-932a-89058200e8e4.png)
 
 If you enjoyed the game or wanted to comment, I will be happy to send it to the following address
 
