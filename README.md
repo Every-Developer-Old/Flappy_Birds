@@ -1,9 +1,9 @@
 # Flappy Bird
 Python Game Development - Create Flappy Bird with Pygame 2.0.1
 
-*Flappy Bird Update April (1.5.0)*
+*Flappy Bird Update june (1.5.3)*
 
-Company:Every Developer  
+by **Every Developer**  
 
 Developer >>> MohammadReza.D
 ==========================
@@ -34,7 +34,7 @@ pip install pyinstaller
 for <Windows, Mac, Linux>
 ______________________________________________________________________________________________________________
 
-1. Install Python 3.9.0 (Reccomended <Python 3.9.1> or later) for Windows 10 from >>>
+1. Install Python 3.9.0 (Reccomended <Python 3.9.1> or later) from >>>
 [here](https://www.python.org/downloads/) [***Note that Python 3.9.x cannot be used on Windows 7 or earlier**]
 
 2. Install Python 3.7.0 (Reccomended <Python 3.8.0>)for Windows 7 or earlier from >>>
@@ -61,8 +61,6 @@ ________________________________________________________________________________
    ```
 
 Contrls = Use <kbd>K_UP</kbd> or <kbd>Spacebar</kbd> key to play and <kbd>Esc</kbd> or <kbd>Exit</kbd> to Exit the game.
-
-***Be sure to watch the video**
 
 
 Notes
