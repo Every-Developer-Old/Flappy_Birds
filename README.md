@@ -1,11 +1,11 @@
-# Flappy Bird
+# 🐥Flappy Bird🐤
 Python Game Development - Create Flappy Bird with Pygame 2.0.1
 
 *Flappy Bird Update june (1.5.3)*
 
 by **Every Developer**  
 
-Developer >>> MohammadReza.D
+Developer : MohammadReza.D
 ==========================
 
 ![Pipe_Bird_Logo](https://user-images.githubusercontent.com/84382544/122960555-c34c9d80-d398-11eb-9fda-76650e8cf2fb.png)
@@ -41,7 +41,7 @@ ________________________________________________________________________________
 [here](https://www.python.org/downloads/)
 
 3. Install Pygame 1.9.x (Reccomended Pygame 2.0.1 or later) from >>>
-[here](http://www.pygame.org/download.shtml) or ***Pip install pygame** in terminal
+[here](http://www.pygame.org/download.shtml) or **Pip install pygame** in terminal
 
 ______________________________________________________________________________________________________________
 **************************************************************************************************************
@@ -57,8 +57,9 @@ ________________________________________________________________________________
 1. In the root directory run
 
    ```bash
-   run python Flappy_Bird.py
+   run python Flappy_Bird(1-3).py
    ```
+   or Flappy Bird.exe
 
 Contrls = Use <kbd>K_UP</kbd> or <kbd>Spacebar</kbd> key to play and <kbd>Esc</kbd> or <kbd>Exit</kbd> to Exit the game.
 
