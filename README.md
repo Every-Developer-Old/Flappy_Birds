@@ -41,7 +41,7 @@ ________________________________________________________________________________
 [here](https://www.python.org/downloads/)
 
 3. Install Pygame 1.9.x (Reccomended Pygame 2.0.1 or later) from >>>
-[here](http://www.pygame.org/download.shtml) or **Pip install pygame** in terminal
+[here](http://www.pygame.org/download.shtml) or **pip install pygame** in terminal
 
 ______________________________________________________________________________________________________________
 **************************************************************************************************************
