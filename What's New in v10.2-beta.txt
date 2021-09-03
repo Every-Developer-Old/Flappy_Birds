@@ -1,0 +1,9 @@
+What's New in Flappy Bird (Careless series) v10.2-beta:
+
+1. Improvements in the game process
+2. Synchronize ground and pipes
+3. Random selection of birds, pipes and background
+4. Improve bird fluttering speed
+5. Change effect sounds
+6. Added lose and sleep page
+7. Increase the difficulty of the game (change in the distances between the pipes)
