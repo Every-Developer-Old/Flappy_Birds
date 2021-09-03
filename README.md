@@ -1,20 +1,20 @@
 # 🐥Careless Bird🤕
 Python Game Development - Create Flappy Bird with Pygame 2.0.0
 
-***Flappy Bird April Update (10.1-alpha)***
+***Flappy Bird April Update (10.2-beta)***
 
 by **Every Developer**  
 
 Developer : MohammadReza.D
 ==========================
 
-![Circle_Logo2](https://user-images.githubusercontent.com/84382544/131996926-1b623a76-9005-4d3c-b248-cd2f1c870b7d.png)
+![21ZzpgClpiL _SY400_](https://user-images.githubusercontent.com/84382544/132004499-9e9da1f8-03e9-4ebf-88ce-bf42756af521.png)
 
 # About
 
 A Careless Bird clone made using [python-pygame][pygame]
 
-Programming language >>> [Python_3.9.0]
+Programming language >>> [Python_3.9.1]
 
 Game library  ...... >>> [Pygame_2.0.0]
 
@@ -35,7 +35,7 @@ pip install pyinstaller
 for <Windows, Mac, Linux>
 ______________________________________________________________________________________________________________
 
-1. Install Python 3.6.x or later(Reccomended <Python 3.9.0>) from >>>
+1. Install Python 3.6.x or later(Reccomended <Python 3.9.1>) from >>>
 [here](https://www.python.org/downloads/)
 
 3. Install Pygame 1.9.x (Reccomended Pygame 2.0.0 or later) from >>>
@@ -74,6 +74,7 @@ Line by line of codes This game was written by *[Mohammad Reza]* himself
 [Python]: https://www.python.org
 [pygame]: http://www.pygame.org
 
+![flappy-birds-amazon 0 1467743570 0](https://user-images.githubusercontent.com/84382544/131217676-8a61aed7-7fd2-4a8c-932a-89058200e8e4.png)
 
 If you enjoyed the game or wanted to comment, I will be happy to send it to the following address
 
