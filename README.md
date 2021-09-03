@@ -54,9 +54,8 @@ ________________________________________________________________________________
 1. In the root directory run
 
    ```bash
-   python Flappy_Bird.py
+   python Careless_bird.py
    ```
-   or Flappy Bird.exe
 
 Contrls = Use <kbd>Spacebar</kbd> key to play and <kbd>Exit</kbd> to Exit the game.
 
