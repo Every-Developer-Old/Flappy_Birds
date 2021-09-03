@@ -12,7 +12,7 @@ Developer : MohammadReza.D
 
 # About
 
-A Flappy Bird clone made using [python-pygame][pygame]
+A Careless Bird clone made using [python-pygame][pygame]
 
 Programming language >>> [Python_3.9.0]
 
