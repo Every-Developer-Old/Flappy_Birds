@@ -35,11 +35,15 @@ pip install pyinstaller
 for <Windows, Mac, Linux>
 ______________________________________________________________________________________________________________
 
-1. Install Python 3.6.x or later(Reccomended <Python 3.9.1>) from >>>
+1. Install Python 3.9.0 (Reccomended <Python 3.9.1> or later) from >>>
+[here](https://www.python.org/downloads/) [***Note that Python 3.9.x cannot be used on Windows 7 or earlier**]
+
+2. Install Python 3.7.0 (Reccomended <Python 3.8.0>)for Windows 7 or earlier from >>>
 [here](https://www.python.org/downloads/)
 
-3. Install Pygame 1.9.x (Reccomended Pygame 2.0.0 or later) from >>>
+3. Install Pygame 1.9.x (Reccomended Pygame 2.0.1 or later) from >>>
 [here](http://www.pygame.org/download.shtml) or **pip install pygame** in terminal
+
 
 **************************************************************************************************************
 
