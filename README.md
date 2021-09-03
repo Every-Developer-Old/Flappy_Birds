@@ -1,7 +1,7 @@
 # 🐥Flappy Bird🐤
-Python Game Development - Create Flappy Bird with Pygame 2.0.1
+Python Game Development - Create Flappy Bird with Pygame 2.0.0
 
-*Flappy Bird Update june (1.5.3)*
+***Flappy Bird April Update (10.1-alpha)***
 
 by **Every Developer**  
 
@@ -14,8 +14,9 @@ Developer : MohammadReza.D
 
 A Flappy Bird clone made using [python-pygame][pygame]
 
-Programming language >>> [Python_3.9.1]
-Game library  ...... >>> [Pygame_2.0.1]
+Programming language >>> [Python_3.9.0]
+
+Game library  ...... >>> [Pygame_2.0.0]
 
 # Installation
 
@@ -34,16 +35,12 @@ pip install pyinstaller
 for <Windows, Mac, Linux>
 ______________________________________________________________________________________________________________
 
-1. Install Python 3.9.0 (Reccomended <Python 3.9.1> or later) from >>>
-[here](https://www.python.org/downloads/) [***Note that Python 3.9.x cannot be used on Windows 7 or earlier**]
-
-2. Install Python 3.7.0 (Reccomended <Python 3.8.0>)for Windows 7 or earlier from >>>
+1. Install Python 3.6.x or later(Reccomended <Python 3.9.0>) from >>>
 [here](https://www.python.org/downloads/)
 
-3. Install Pygame 1.9.x (Reccomended Pygame 2.0.1 or later) from >>>
+3. Install Pygame 1.9.x (Reccomended Pygame 2.0.0 or later) from >>>
 [here](http://www.pygame.org/download.shtml) or **pip install pygame** in terminal
 
-______________________________________________________________________________________________________________
 **************************************************************************************************************
 
 1. Clone the repository:
@@ -57,11 +54,11 @@ ________________________________________________________________________________
 1. In the root directory run
 
    ```bash
-   python Flappy_Bird(1-3).py
+   python Flappy_Bird.py
    ```
    or Flappy Bird.exe
 
-Contrls = Use <kbd>K_UP</kbd> or <kbd>Spacebar</kbd> key to play and <kbd>Esc</kbd> or <kbd>Exit</kbd> to Exit the game.
+Contrls = Use <kbd>Spacebar</kbd> key to play and <kbd>Exit</kbd> to Exit the game.
 
 
 Notes
