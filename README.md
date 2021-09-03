@@ -46,7 +46,7 @@ ________________________________________________________________________________
 1. Clone the repository:
 
    ```bash
-   gh repo clone Every-Developer/Flappy_Bird
+   gh repo clone Every-Developer/Flappy_Birds
    ```
 
    or download as zip and extract.
