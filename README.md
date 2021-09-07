@@ -1,20 +1,20 @@
 # 🐥Careless Bird🤕
 Python Game Development - Create Flappy Bird with Pygame 2.0.0
 
-***Flappy Bird April Update (10.2-beta)***
+***Flappy Bird May Update (10.3)***
 
 by **Every Developer**  
 
 Developer : MohammadReza.D
 ==========================
 
-![21ZzpgClpiL _SY400_](https://user-images.githubusercontent.com/84382544/132004499-9e9da1f8-03e9-4ebf-88ce-bf42756af521.png)
+![Pipe_Bird_Logo1](https://user-images.githubusercontent.com/84382544/132369593-dd6ef849-cf6f-4368-81f7-c60c26da27b1.png)
 
 # About
 
 A Careless Bird clone made using [python-pygame][pygame]
 
-Programming language >>> [Python_3.9.1]
+Programming language >>> [Python_3.9.2]
 
 Game library  ...... >>> [Pygame_2.0.0]
 
@@ -35,13 +35,13 @@ pip install pyinstaller
 for <Windows, Mac, Linux>
 ______________________________________________________________________________________________________________
 
-1. Install Python 3.9.0 (Reccomended <Python 3.9.1> or later) from >>>
+1. Install Python 3.9.0 (Reccomended <Python 3.9.2> or later) from >>>
 [here](https://www.python.org/downloads/) [***Note that Python 3.9.x cannot be used on Windows 7 or earlier**]
 
 2. Install Python 3.7.0 (Reccomended <Python 3.8.0>)for Windows 7 or earlier from >>>
 [here](https://www.python.org/downloads/)
 
-3. Install Pygame 1.9.x (Reccomended Pygame 2.0.1 or later) from >>>
+3. Install Pygame 1.9.x (Reccomended Pygame 2.0.0 or later) from >>>
 [here](http://www.pygame.org/download.shtml) or **pip install pygame** in terminal
 
 
@@ -60,8 +60,9 @@ ________________________________________________________________________________
    ```bash
    python Careless_bird.py
    ```
+   or run EXE file
 
-Contrls = Use <kbd>Spacebar</kbd> key to play and <kbd>Exit</kbd> to Exit the game.
+Contrls = Use <kbd>Spacebar</kbd> and <kbd>K_UP</kbd> keys to play and <kbd>Exit</kbd> to Exit the game.
 
 
 Notes
