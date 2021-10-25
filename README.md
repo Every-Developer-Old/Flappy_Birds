@@ -12,7 +12,7 @@
     <a href="https://www.python.org/">
     	<img src="https://img.shields.io/badge/Language-Python-turquoise" />
     <a href="https://github.com/Every-Developer?tab=stars">
-      <img src='https://img.shields.io/badge/Release-v12.0-goldenrod'>
+      <img src='https://img.shields.io/badge/Release-v11.0-goldenrod'>
     <a href="https://github.com/Every-Developer/InstagramBot/blob/Professional/LICENSE">
       <img src="https://img.shields.io/badge/license-MIT License-lightgreen.svg" />
     </a>
