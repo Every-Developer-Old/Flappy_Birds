@@ -1,7 +1,0 @@
-What's New in Flappy Bird (Careless series) v10.3:
-
-**Run the game in different dimensions**
-
-1. 1920 * 1080 or higher (Suggested)
-2. 1366 * 768
-3. High definition (1280x720) or lower
