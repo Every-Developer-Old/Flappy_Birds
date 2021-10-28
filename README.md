@@ -41,7 +41,7 @@
 - [x] 1. **Clone the repository:**
       
 ```
-gh repo clone Every-Developer/Flappy_Birds
+$ git clone https://github.com/Every-Developer/Flappy_Birds
 ```
 - [ ] Select the desired version from the ***[Releases](https://github.com/Every-Developer/Flappy_Birds/releases)*** section
 <br>
