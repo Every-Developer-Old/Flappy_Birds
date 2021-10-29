@@ -36,7 +36,7 @@
       
 <br>
       
-# 🐣How to play Flappy Bird?🤔
+# 🐣How to play Flappy Fish?🤔
       
 - [x] 1. **Clone the repository:**
       
@@ -49,15 +49,16 @@ $ git clone https://github.com/Every-Developer/Flappy_Birds
 - [x] 2. **in the Directory run:**
       
 ```
-python Flappy_Fish.py
+python Flappy_fish.py
 ```
       
 <br>
       
 | Which one of Flappy Bird? | 🖼Dimensions | 🎞Quality |
 |---|---|---|
-| Flappy_Fish1.py | 576*1024 | 1080p or greater |
-| Flappy_Fish2.py | 288*512 | 720p or lower |
-| Flappy Fish.exe | 576*1024 | 1080p |
+| Flappy_fish (1).py | 576*1024 | 1080p or greater⚡ |
+| Flappy_fish (2).py | 288*512 | 720p or lower |
+| **Flappy Fish.exe** | **576*1024** | **1080p**✨ | 
+| Flappy Fish (2).exe | 288*512 | 720p |
 
 
