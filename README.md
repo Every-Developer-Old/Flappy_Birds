@@ -13,7 +13,7 @@
     	<img src="https://img.shields.io/badge/Language-Python-turquoise" />
     <a href="https://github.com/Every-Developer?tab=stars">
       <img src='https://img.shields.io/badge/Release-v11.0-goldenrod'>
-    <a href="https://github.com/Every-Developer/InstagramBot/blob/Professional/LICENSE">
+    <a href="https://github.com/Every-Developer/Flappy_Birds/blob/Flappy-Fish/LICENSE">
       <img src="https://img.shields.io/badge/license-MIT License-lightgreen.svg" />
     </a>
   </p>
@@ -43,7 +43,7 @@
 ```
 $ git clone https://github.com/Every-Developer/Flappy_Birds
 ```
-- [ ] Select the desired version from the ***[Releases](https://github.com/Every-Developer/Flappy_Birds/releases)*** section
+- [ ] Select the desired version from the ***[Releases](https://github.com/Every-Developer/Flappy_Birds/releases)*** section (*v11.0*)
 <br>
       
 - [x] 2. **in the Directory run:**
