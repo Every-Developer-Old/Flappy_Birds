@@ -29,7 +29,7 @@
       
 **Install Pygame:**
   ```
-  pip install pygame
+  pip install pygame 
   ```
       
 ***📟EXE file is included in the project✔***
