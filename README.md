@@ -1,7 +1,7 @@
 # 🐥Careless Bird🤕
 Python Game Development - Create Flappy Bird with Pygame 2.0.0
 
-***Flappy Bird May Update (10.3)***
+***Flappy Bird May Update (v10.3)***
 
 by **Every Developer**  
 
@@ -50,7 +50,7 @@ ________________________________________________________________________________
 1. Clone the repository:
 
    ```bash
-   gh repo clone Every-Developer/Flappy_Birds
+   git clone https://github.com/Every-Developer/Flappy_Birds
    ```
 
    or download as zip and extract.
