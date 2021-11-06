@@ -11,7 +11,7 @@
     </a>
     <a href="https://www.python.org/">
     	<img src="https://img.shields.io/badge/Language-Python-turquoise" />
-    <a href="https://github.com/Every-Developer/Flappy_Birds/releases/tag/11.0">
+    <a href="https://github.com/Every-Developer/Flappy_Birds/releases/tag/v11.0">
       <img src='https://img.shields.io/badge/Release-v11.0-goldenrod'>
     <a href="https://github.com/Every-Developer/Flappy_Birds/blob/Flappy-Fish/LICENSE">
       <img src="https://img.shields.io/badge/license-MIT License-lightgreen.svg" />
@@ -43,7 +43,7 @@
 ```
 $ git clone https://github.com/Every-Developer/Flappy_Birds
 ```
-- [ ] Select the desired version from the ***[Releases](https://github.com/Every-Developer/Flappy_Birds/releases)*** section [(*v11.0*)](https://github.com/Every-Developer/Flappy_Birds/releases/tag/11.0)
+- [ ] Select the desired version from the ***[Releases](https://github.com/Every-Developer/Flappy_Birds/releases)*** section [(*v11.0*)](https://github.com/Every-Developer/Flappy_Birds/releases/tag/v11.0)
 <br>
       
 - [x] 2. **in the Directory run:**
