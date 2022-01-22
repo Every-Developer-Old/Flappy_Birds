@@ -1,5 +1,5 @@
 # (: Flappy Birds :) Pink World(Flappy Doge)!
-# Release v12.1.0
+# Release v12.1.1-N
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 # Python Version : 3.9.9
 # Pygame Version : 2.1.1
@@ -69,14 +69,14 @@ Highlight_paint = Beige
 Highlight_conter = White
 
 # My Photos (Background and floor)
-play_button = pygame.transform.scale(pygame.image.load('assets/Buttons/play.png'), (75, 44)).convert_alpha(Main_Screen)
-Rate_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Rate.png'), (75, 44)).convert_alpha(Main_Screen)
+play_button = pygame.transform.scale(pygame.image.load('assets/Buttons/play.png'), (69, 39)).convert_alpha(Main_Screen)
+Rate_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Rate.png'), (69, 39)).convert_alpha(Main_Screen)
 Menu_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Menu.png'), (53, 18)).convert_alpha(Main_Screen)
 
 ground_image = pygame.image.load('assets/Background/floor.png').convert(Main_Screen)
 
-pg1_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Pygame_Text.png'), (75, 44)).convert_alpha(Main_Screen)
-pg2_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Pygame_snake.png'), (75, 44)).convert_alpha(Main_Screen)
+pg1_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Pygame_Text.png'), (69, 39)).convert_alpha(Main_Screen)
+pg2_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Pygame_snake.png'), (69, 39)).convert_alpha(Main_Screen)
 
 gameover_image = pygame.image.load('assets/Message/game over.png').convert_alpha(Main_Screen)
 
@@ -207,8 +207,9 @@ class Bird_Animation(pygame.sprite.Sprite):
             if self.gravity <= 0:
                 self.rotation = self.gravity * -4
     
+            # Rotation is not available in version N.
+            # self.image = pygame.transform.rotate(self.My_Birds[self.index], self.rotation)
             
-            self.image = pygame.transform.rotate(self.My_Birds[self.index], self.rotation)
             
         
         else:
@@ -219,7 +220,9 @@ class Bird_Animation(pygame.sprite.Sprite):
             else:
                 self.rotation = self.gravity * 15
             
-            self.image = pygame.transform.rotate(self.My_Birds[self.index], self.rotation)
+            # Rotation is not available in version N.
+            # self.image = pygame.transform.rotate(self.My_Birds[self.index], self.rotation)
+            
 
         # print('rotation', self.rotation)
         # print('gravity', self.gravity)
@@ -296,7 +299,7 @@ PIPELINE = pygame.sprite.Group()
 Random_Page = randint(0, len(BACKGROUNDS_LIST) - 1)
 Background_Page = pygame.image.load(BACKGROUNDS_LIST[Random_Page]).convert(Main_Screen)
 
-# *__* *__* *__* *__* *__* *__* *__* Welcome Page *__* *__* *__* *__* *__* *__* *__* *__* *__*
+# *__* *__* *__* *__* *__* *__* *__* Welcome Page *__* *__* *__* *__* *__* *__* *__* *__*
 name_image = pygame.image.load('assets/Message/flappy_name.png').convert_alpha(Main_Screen)
 name_rect  = name_image.get_rect(center=(Screen_width/2, 80))
 
@@ -305,7 +308,7 @@ get_ready_rect = get_ready_Page.get_rect(center=(Screen_width/2, 180))
 
 Tap_image = pygame.image.load('assets/Message/tap.png').convert_alpha(Main_Screen)
 Tap_rect  = Tap_image.get_rect(center=(Screen_width/2, 320))
-#____________________________________________________________________________________________#
+#_________________________________________________________________________________________#
 
 
 # FUNCTIONS
@@ -319,7 +322,7 @@ def Welcome_Screen(Mode='Normal'):
         # pygame.mixer.music.play()
 
     # pygame button effect
-    pg_touch = False
+    # pg_touch = False
 
     x = 70
     y = (Screen_height/2)
@@ -378,14 +381,13 @@ def Welcome_Screen(Mode='Normal'):
                         webbrowser.open('https://www.pygame.org/')
 
 
-
-            if event.type == MOUSEMOTION and Game_Status == True:
+            # if event.type == MOUSEMOTION and Game_Status == True:
                 
-                if pg_rect.collidepoint(event.pos):
-                    pg_touch = True
+            #     if pg_rect.collidepoint(event.pos):
+            #         pg_touch = True
 
-                else:
-                    pg_touch = False
+            #     else:
+            #         pg_touch = False
 
             # Wining Bird
             if event.type == Create_wing:
@@ -415,7 +417,7 @@ def Welcome_Screen(Mode='Normal'):
             
             Main_Screen.blit(name_image, name_rect)
             Main_Screen.blit(play_button, play_rect)
-            Pygame_web(pg_touch)
+            Pygame_web()
 
         floor_scroll -= floor_speed
 
@@ -477,7 +479,7 @@ def Flighting(Click_status, gravity, Fluttering):
 
 
 
-def Falling_Buttons(height = 350):
+def Falling_Buttons(height = 340):
     
     '''What buttons appear on the screen when I lose?'''
 
@@ -529,7 +531,7 @@ def Menu_button(menu_y = 400):
     return action
 
 
-def Pygame_web(touch):
+def Pygame_web(touch=False):
 
     '''Do you want to visit the Pygame site?
             There are a lot of interesting games there'''
@@ -638,10 +640,13 @@ def Main_game(fly):
 
     Fluttering = fly
     
+    # _____________________________________________
+    # These features are not supported in version N.
     # position of Game over buttons
-    button_position = floor_height
+    # button_position = floor_height
     # High score test box height
-    HI_height = 200
+    # HI_height = 400
+    # _____________________________________________
 
     # pygame.mixer.music.stop()
 
@@ -745,13 +750,13 @@ def Main_game(fly):
 
         if Flappy_bird.rect.bottom >= floor_height and Game_Status == False:
 
-            if HI_height <= 290:
-                HI_height += 10
+            # if HI_height <= 590:
+            #    HI_height += 20
             
-            if button_position >= 350:
-                button_position -= 10
+            #if button_position >= 700:
+            #   button_position -= 20
 
-            Final_Score(Score, Highlight_paint, HI_height)
+            Final_Score(Score, Highlight_paint)
 
             if Menu_button():
 
@@ -759,7 +764,7 @@ def Main_game(fly):
                 Score = Reset_Game()
                 Welcome_Screen('Normal')
             
-            if Falling_Buttons(button_position):
+            if Falling_Buttons():
                 
                 Game_Status = True
                 Score = Reset_Game()
