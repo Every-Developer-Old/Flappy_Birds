@@ -12,8 +12,8 @@
     <a href="https://www.python.org/">
     	<img src="https://img.shields.io/badge/Language-Python-turquoise" />
     </a>
-    <a href="https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.1.1-N">
-      <img src='https://img.shields.io/badge/Release-v12.1.1N-goldenrod'>
+    <a href="https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.1">
+      <img src='https://img.shields.io/badge/Release-v12.1-goldenrod'>
     <a href="https://github.com/Every-Developer/Flappy_Birds/blob/Pink-World/LICENSE">
       <img src="https://img.shields.io/badge/license-MIT License-lightgreen.svg" />
     </a>
@@ -33,35 +33,35 @@
   ```
   pip install pygame 
   ```
-
+      
 ***📂EXE file is included in the project✔***
       
 <br>
       
-# 🐣How to install Flappy Doge v12.1.1-N?🤔
+# 🐣How to install Flappy Doge v12.1?🤔
       
 - [x] 1. **Clone the repository:**
-
+      
   ```
-  git clone https://github.com/Every-Developer/Flappy_Birds --branch v12.1.1-N
+  git clone https://github.com/Every-Developer/Flappy_Birds --branch v12.1
   ```
-- [ ] Download the desired version from the ***[Releases](https://github.com/Every-Developer/Flappy_Birds/releases)*** section [(*v12.1.1-N*)](https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.1.1-N)
+- [ ] Download the desired version from the ***[Releases](https://github.com/Every-Developer/Flappy_Birds/releases)*** section [(*v12.1*)](https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.1)
 <br>
       
 - [x] 2. **in the Directory run:**
       
   ```
-  python Flappy_Doge-N.py
+  python Flappy_Doge.py
   
-  Flappy Doge N.exe
+  Flappy Doge.exe
   ```      
 
 ## 🖼 Dimensions of the Flappy Doge
       
 | Which one of Flappy Bird? | 🖼Dimensions | 🎞Quality |
 |---|---|---|
-| Flappy_Doge-N.py | 576*1024 | 1080p or greater⚡ |
-| Flappy_Doge-N2.py | 288*512 | 720p or lower |
+| Flappy_Doge.py | 576*1024 | 1080p or greater⚡ |
+| Flappy_Doge2.py | 288*512 | 720p or lower |
 | **Flappy Doge.exe** | **576*1024** | **1080p**✨ | 
 | Flappy Doge (2).exe | 288*512 | 720p |
 
