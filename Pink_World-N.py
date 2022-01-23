@@ -1,7 +1,7 @@
-# (: Flappy Birds :) Pink World(Flappy Doge)!
-# Release v12.1.0
+# (: Flappy Birds :) Pink World!
+# Release v12.2-N
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - #
-# Python Version : 3.9.9
+# Python Version : 3.10.0
 # Pygame Version : 2.1.1
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 # Programmer : Mohammadreza.D
@@ -11,9 +11,9 @@
 
 import pygame
 import sys
-import webbrowser
+import random
 
-from random import randint
+import webbrowser
 from pygame.locals import *
 
 
@@ -24,31 +24,34 @@ pygame.init()
 FPS = 60
 FPSClock = pygame.time.Clock()
 
+# Main directory (Assets folder)
+DIRECTORY = 'assets/'
+
 # Game Display setting
-Screen_width = 288
-Screen_height = 512
+Screen_width = 576
+Screen_height = 1024
  
 Main_Screen = pygame.display.set_mode((Screen_width, Screen_height))
-pygame.display.set_caption('Flappy Doge')
+pygame.display.set_caption('Pink World')
 
-Icon = pygame.image.load('assets/Logo/Doge_icon2.png')
+Icon = pygame.image.load(f'{DIRECTORY}Logo/Yellow_Pink_icon.png')
 pygame.display.set_icon(Icon)
 
 
 # Define game variables
 floor_scroll = 0
-floor_height = 440
-floor_speed  = 2
+floor_height = 900
+floor_speed  = 3
 
 Fluttering = True
 Game_Status = True
 
 pass_pipe = False
-Distance_pipe = 110
-pipe_frequency = 1400 #milliseconds
+Distance_pipe = 220
+pipe_frequency = 2000 # milliseconds
 last_pipe = pygame.time.get_ticks() - pipe_frequency
 
-Sleep_wing = 120
+Sleep_wing = 150
 Create_wing  = pygame.USEREVENT
 pygame.time.set_timer(Create_wing, Sleep_wing)
 
@@ -56,7 +59,7 @@ pygame.time.set_timer(Create_wing, Sleep_wing)
 Score = 0
 High_Score = 0
 x_point = (Screen_width/2)
-y_point = 70
+y_point = 140
 
 # Colors
 Beige = (245, 245, 220)
@@ -69,61 +72,73 @@ Highlight_paint = Beige
 Highlight_conter = White
 
 # My Photos (Background and floor)
-play_button = pygame.transform.scale(pygame.image.load('assets/Buttons/play.png'), (75, 44)).convert_alpha(Main_Screen)
-Rate_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Rate.png'), (75, 44)).convert_alpha(Main_Screen)
-Menu_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Menu.png'), (53, 18)).convert_alpha(Main_Screen)
+play_button = pygame.transform.scale(pygame.image.load(f'{DIRECTORY}Buttons/play.png'), (135, 75)).convert_alpha(Main_Screen)
+Rate_image = pygame.transform.scale(pygame.image.load(f'{DIRECTORY}Buttons/Rate.png'), (135, 75)).convert_alpha(Main_Screen)
+Menu_image = pygame.transform.scale(pygame.image.load(f'{DIRECTORY}Buttons/Menu.png'), (104, 36)).convert_alpha(Main_Screen)
 
-ground_image = pygame.image.load('assets/Background/floor.png').convert(Main_Screen)
+ground_image = pygame.transform.scale2x(pygame.image.load(f'{DIRECTORY}Background/floor.png')).convert(Main_Screen)
 
-pg1_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Pygame_Text.png'), (75, 44)).convert_alpha(Main_Screen)
-pg2_image = pygame.transform.scale(pygame.image.load('assets/Buttons/Pygame_snake.png'), (75, 44)).convert_alpha(Main_Screen)
+pg1_image = pygame.transform.scale(pygame.image.load(f'{DIRECTORY}Buttons/Pygame_Text.png'), (135, 75)).convert_alpha(Main_Screen)
+pg2_image = pygame.transform.scale(pygame.image.load(f'{DIRECTORY}Buttons/Pygame_snake.png'), (135, 75)).convert_alpha(Main_Screen)
 
-gameover_image = pygame.image.load('assets/Message/game over.png').convert_alpha(Main_Screen)
+gameover_image = pygame.transform.scale2x(pygame.image.load(f'{DIRECTORY}Message/game over.png')).convert_alpha(Main_Screen)
 
 
-play_rect = play_button.get_rect(center=((Screen_width/2-50), 400))
-pg_rect = pg1_image.get_rect(center=((Screen_width/2+50), 400))
+play_rect = play_button.get_rect(center=((Screen_width/2-100), 800))
+pygame_rect = pg1_image.get_rect(center=((Screen_width/2+100), 800))
 
 # Insert High Score from MyBestScore
 try:
-    Data = open('assets/My Score/High_Score', 'r')
+    Data = open(f'{DIRECTORY}My Score/High_Score', 'r')
        
     High_Score = int(Data.read())
     Data.close()
 
 except FileNotFoundError:
 
-    with open('assets/My Score/High_Score', 'w') as Data:
+    with open(f'{DIRECTORY}My Score/High_Score', 'w') as Data:
 
         High_Score = 0
         Data.write(str(High_Score))
 
-# *___________*____________*____________*
+# *___________*____________*____________*____________*
 
 # list of backgrounds
 BACKGROUNDS_LIST = [
     
-    'assets/Background/Pink_Background.png',
-    'assets/Background/Dark_Background.png'  
+    DIRECTORY +'Background/Pink_Background.png',
+    DIRECTORY +'Background/Dark_Background.png'  
 ]
 
 # list of all possible players (tuple of 3 positions of flap)
 PLAYERS_LIST = [
     
-    # doge bird
+    # Pink birds
     (
-        'assets/Bird/bird-up-flap.png',
-        'assets/Bird/bird-mid-flap.png',
-        'assets/Bird/bird-down-flap.png'    )
+        DIRECTORY +'Bird/pink-bird-up-flap.png',
+        DIRECTORY +'Bird/pink-bird-mid-flap.png',
+        DIRECTORY +'Bird/pink-bird-down-flap.png'    ),
+
+    # Red birds
+    (
+        DIRECTORY +'Bird/red-bird-up-flap.png',
+        DIRECTORY +'Bird/red-bird-mid-flap.png',
+        DIRECTORY +'Bird/red-bird-down-flap.png'    ),
+
+    # Lavender birds
+    (
+        DIRECTORY +'Bird/lavender-bird-up-flap.png',
+        DIRECTORY +'Bird/lavender-bird-mid-flap.png',
+        DIRECTORY +'Bird/lavender-bird-down-flap.png'    )
     
 ]
 
 
 # pygame.mixer.init()
-Audio_jump   = pygame.mixer.Sound('assets/Audio/Count.ogg')
-Audio_Flight = pygame.mixer.Sound('assets/Audio/Flight.ogg')
-Audio_Fall   = pygame.mixer.Sound('assets/Audio/Collision.ogg')
-Audio_wing   = pygame.mixer.Sound('assets/Audio/Wind.ogg')
+Audio_jump   = pygame.mixer.Sound(f'{DIRECTORY}Audio/Count.ogg')
+Audio_Flight = pygame.mixer.Sound(f'{DIRECTORY}Audio/Flight.ogg')
+Audio_Fall   = pygame.mixer.Sound(f'{DIRECTORY}Audio/Collision.ogg')
+Audio_wing   = pygame.mixer.Sound(f'{DIRECTORY}Audio/Wind.ogg')
 # pygame.mixer.music.load('Audio/examplesound')
 
 
@@ -140,12 +155,12 @@ class Bird_Animation(pygame.sprite.Sprite):
         self.counter = 0
 
         # Select random player
-        Random_Player = randint(0, len(PLAYERS_LIST) - 1)
+        Random_Player = random.randrange(0, len(PLAYERS_LIST))
 
         # *___* *___* *___* *___* *___* My Flappy Birds Pictures *___* *___* *___* *___* *___* *___*
         for index in range(0, 3):
         
-            New_Bird = pygame.image.load(PLAYERS_LIST[Random_Player][index]).convert_alpha(Main_Screen)
+            New_Bird = pygame.transform.scale2x(pygame.image.load(PLAYERS_LIST[Random_Player][index])).convert_alpha(Main_Screen)
             self.My_Birds.append(New_Bird)
 
 
@@ -165,15 +180,15 @@ class Bird_Animation(pygame.sprite.Sprite):
 
         # Gravity and logical rotation of the bird in ups and downs
         if Fluttering:
-            self.gravity += 0.25
+            self.gravity += 0.45
 
-            if self.gravity > 6:
-                self.gravity = 6
+            if self.gravity > 14:
+                self.gravity = 14
 
-            if self.rect.bottom <= floor_height:
+            if self.rect.bottom < (floor_height+10):
                 self.rect.y += self.gravity
 
-            if self.rect.bottom >= floor_height:
+            if self.rect.bottom >= (floor_height+10):
                 
                 Audio_Fall.play()
                 Audio_wing.play()
@@ -198,31 +213,32 @@ class Bird_Animation(pygame.sprite.Sprite):
 
             self.image = self.My_Birds[self.index]
             
-            self.rotation = self.gravity * -3
+            # self.rotation = self.gravity * -2
 
-            if self.gravity >= 0:
-                self.rotation = self.gravity * -5
+            # if self.gravity >= 0:
+            #     self.rotation = self.gravity * -4
 
 
-            if self.gravity <= 0:
-                self.rotation = self.gravity * -4
+            # if self.gravity <= 0:
+            #     self.rotation = self.gravity * -2
     
-            
-            self.image = pygame.transform.rotate(self.My_Birds[self.index], self.rotation)
+            # Rotation is not available in version N.
+            # self.image = pygame.transform.rotate(self.My_Birds[self.index], self.rotation)
             
         
-        else:
+        # else:
             
-            if self.gravity > 3 and self.rotation < -20:
-                self.rotation = -90
+        #     if self.gravity > 6 and self.rotation < -30:
+        #         self.rotation = -90
                 
-            else:
-                self.rotation = self.gravity * 15
+        #     else:
+        #         self.rotation = self.gravity * 11.4
             
-            self.image = pygame.transform.rotate(self.My_Birds[self.index], self.rotation)
+            # Rotation is not available in version N.
+            # self.image = pygame.transform.rotate(self.My_Birds[self.index], self.rotation)
 
-        # print('rotation', self.rotation)
-        # print('gravity', self.gravity)
+        # print(self.rotation)
+        # print(self.gravity)
 
 
 class Pipe(pygame.sprite.Sprite):
@@ -234,7 +250,7 @@ class Pipe(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         # My pipes
-        self.image = pygame.image.load('assets/Pipe/pipe_1.png').convert_alpha(Main_Screen)
+        self.image = pygame.transform.scale2x(pygame.image.load(f'{DIRECTORY}Pipe/pipe_1.png')).convert_alpha(Main_Screen)
         self.rect = self.image.get_rect()
 
         # Pipe Position >>> Top & Bottom
@@ -286,26 +302,26 @@ class Pipe(pygame.sprite.Sprite):
 
 # BIRD SPRITES               
 PLAYERS_GROUP = pygame.sprite.Group()
-Flappy_bird = Bird_Animation(70, (Screen_height/2))
+Flappy_bird = Bird_Animation(100, (Screen_height/2))
 PLAYERS_GROUP.add(Flappy_bird)
 
 # PIPE SPRITES
 PIPELINE = pygame.sprite.Group()
 
 # Select random background
-Random_Page = randint(0, len(BACKGROUNDS_LIST) - 1)
-Background_Page = pygame.image.load(BACKGROUNDS_LIST[Random_Page]).convert(Main_Screen)
+Random_Page = random.choice(BACKGROUNDS_LIST)
+Background_Page = pygame.transform.scale2x(pygame.image.load(Random_Page)).convert(Main_Screen)
 
-# *__* *__* *__* *__* *__* *__* *__* Welcome Page *__* *__* *__* *__* *__* *__* *__* *__* *__*
-name_image = pygame.image.load('assets/Message/flappy_name.png').convert_alpha(Main_Screen)
-name_rect  = name_image.get_rect(center=(Screen_width/2, 80))
+# *__* *__* *__* *__* *__* *__* *__* Welcome Page *__* *__* *__* *__* *__* *__* *__* *__*
+name_image = pygame.transform.scale2x(pygame.image.load(f'{DIRECTORY}Message/flappy_name.png')).convert_alpha(Main_Screen)
+name_rect  = name_image.get_rect(center=(Screen_width/2, 180))
 
-get_ready_Page = pygame.image.load('assets/Message/get ready!.png').convert_alpha(Main_Screen)
-get_ready_rect = get_ready_Page.get_rect(center=(Screen_width/2, 180))
+get_ready_image = pygame.transform.scale2x(pygame.image.load(f'{DIRECTORY}Message/get ready!.png')).convert_alpha(Main_Screen)
+get_ready_rect = get_ready_image.get_rect(center=(Screen_width/2, 370))
 
-Tap_image = pygame.image.load('assets/Message/tap.png').convert_alpha(Main_Screen)
-Tap_rect  = Tap_image.get_rect(center=(Screen_width/2, 320))
-#____________________________________________________________________________________________#
+Tap_image = pygame.transform.scale2x(pygame.image.load(f'{DIRECTORY}Message/tap.png')).convert_alpha(Main_Screen)
+Tap_rect  = Tap_image.get_rect(center=(Screen_width/2, 600))
+#_____________________________________________________________________________________#
 
 
 # FUNCTIONS
@@ -319,22 +335,23 @@ def Welcome_Screen(Mode='Normal'):
         # pygame.mixer.music.play()
 
     # pygame button effect
-    pg_touch = False
+    # pygame_touch = False
 
-    x = 70
+    x = 100
     y = (Screen_height/2)
 
     Flight_mode = {'val': 0, 'dir': 1}
 
-
+    
     if Mode == 'Restart':
 
-        get_ready_rect = get_ready_Page.get_rect(center=(Screen_width/2, 150))
-        Tap_rect  = Tap_image.get_rect(center=(Screen_width/2, 320))
+        get_ready_rect = get_ready_image.get_rect(center=(Screen_width/2, 270))
+        Tap_rect  = Tap_image.get_rect(center=(Screen_width/2, 670))
     
     elif Mode == 'Normal':
-        get_ready_rect = get_ready_Page.get_rect(center=(Screen_width/2, 175))
-        Tap_rect  = Tap_image.get_rect(center=(Screen_width/2, 300))
+        
+        get_ready_rect = get_ready_image.get_rect(center=(Screen_width/2, 370))
+        Tap_rect  = Tap_image.get_rect(center=(Screen_width/2, 600))
 
 
     while True:
@@ -353,7 +370,7 @@ def Welcome_Screen(Mode='Normal'):
                 if Mode == 'Restart':
                     
                     Fluttering = True
-                    Flappy_bird.gravity = -5
+                    Flappy_bird.gravity = -10
                     Main_game(Fluttering)
                 
 
@@ -373,19 +390,18 @@ def Welcome_Screen(Mode='Normal'):
                         Main_game(Fluttering)
   
 
-                    if pg_rect.collidepoint(event.pos):
+                    if pygame_rect.collidepoint(event.pos):
                         
                         webbrowser.open('https://www.pygame.org/')
 
 
-
-            if event.type == MOUSEMOTION and Game_Status == True:
+            # if event.type == MOUSEMOTION and Game_Status == True:
                 
-                if pg_rect.collidepoint(event.pos):
-                    pg_touch = True
+            #     if pygame_rect.collidepoint(event.pos):
+            #         pygame_touch = True
 
-                else:
-                    pg_touch = False
+            #     else:
+            #         pygame_touch = False
 
             # Wining Bird
             if event.type == Create_wing:
@@ -407,7 +423,7 @@ def Welcome_Screen(Mode='Normal'):
         Main_Screen.blit(ground_image, (floor_scroll, floor_height))
         Main_Screen.blit(ground_image, (floor_scroll + Screen_width, floor_height))
 
-        Main_Screen.blit(get_ready_Page, get_ready_rect)
+        Main_Screen.blit(get_ready_image, get_ready_rect)
         Main_Screen.blit(Tap_image, Tap_rect)
 
 
@@ -415,7 +431,7 @@ def Welcome_Screen(Mode='Normal'):
             
             Main_Screen.blit(name_image, name_rect)
             Main_Screen.blit(play_button, play_rect)
-            Pygame_web(pg_touch)
+            Pygame_web()
 
         floor_scroll -= floor_speed
 
@@ -436,8 +452,8 @@ def Energy_Bird(Energy):
 
     '''Up and down the bird on the Home screen'''
 
-    Bird_height = 12
-    Speed_of_movement = 0.5 # 0 to 4
+    Bird_height = 20
+    Speed_of_movement = 1 # 0 to 5
 
     if abs(Energy['val']) == Bird_height:
         Energy['dir'] *= -1
@@ -460,13 +476,13 @@ def Flighting(Click_status, gravity, Fluttering):
     if Click_Pressed[0] == 1 and Click_status == False and Fluttering == True:
         
         Click_status = True
-        gravity = -5
+        gravity = -10
         Audio_Flight.play()
 
     # elif pygame.key.get_pressed()[pygame.K_SPACE] and Click_status == False and Fluttering == True:
 
     #     Click_status = True
-    #     gravity = -5
+    #     gravity = -10
     #     # Audio_Flight.play()
     
     if Click_Pressed[0] == 0:
@@ -477,14 +493,14 @@ def Flighting(Click_status, gravity, Fluttering):
 
 
 
-def Falling_Buttons(height = 350):
+def Falling_Buttons(height = 680):
     
     '''What buttons appear on the screen when I lose?'''
 
     action = False
 
-    rect_play = play_button.get_rect(midtop=((Screen_width/2)-50, height))
-    rect_rate = Rate_image.get_rect(midtop=((Screen_width/2)+50, height))
+    rect_play = play_button.get_rect(midtop=((Screen_width/2)-100, height))
+    rect_rate = Rate_image.get_rect(midtop=((Screen_width/2)+100, height))
 
     Position = pygame.mouse.get_pos()
     Click_Pressed = pygame.mouse.get_pressed()
@@ -507,7 +523,7 @@ def Falling_Buttons(height = 350):
     return action
 
 
-def Menu_button(menu_y = 400):
+def Menu_button(menu_y = 790):
 
     '''Return to the main menu you saw at the beginning of the game'''
 
@@ -529,16 +545,16 @@ def Menu_button(menu_y = 400):
     return action
 
 
-def Pygame_web(touch):
+def Pygame_web(touch=False):
 
     '''Do you want to visit the Pygame site?
             There are a lot of interesting games there'''
 
     if touch == True:
-        Main_Screen.blit(pg2_image, pg_rect)
+        Main_Screen.blit(pg2_image, pygame_rect)
 
     else:
-        Main_Screen.blit(pg1_image, pg_rect)
+        Main_Screen.blit(pg1_image, pygame_rect)
 
 
 
@@ -546,7 +562,7 @@ def Colision():
 
     '''What happens if I collide with a pipe?'''
 
-    gameover_rect = gameover_image.get_rect(center=(Screen_width/2, 200))
+    gameover_rect = gameover_image.get_rect(center=(Screen_width/2, 350))
 
     # Audio_Collision.play(1)
 
@@ -563,7 +579,7 @@ def Reset_Game():
 
     PIPELINE.empty()
     
-    Flappy_bird.rect.x = 70
+    Flappy_bird.rect.x = 100
     Flappy_bird.rect.y = (Screen_height/2)
 
     Score = 0
@@ -574,7 +590,7 @@ def Counting_Score(Score, Color=Beige):
 
     '''Give me points if I go through the pipes'''
 
-    Font_score = pygame.font.Font('assets/Font/Score.ttf', 42)
+    Font_score = pygame.font.Font(f'{DIRECTORY}Font/Score.ttf', 60)
 
     Points = Font_score.render(f'{Score}', False, Color)
     Point_rect = Points.get_rect(center=(x_point, y_point))
@@ -607,19 +623,20 @@ def Update_Score():
                 pass_pipe = False
 
 
-def Final_Score(Score, Text_color, y=300):
+
+def Final_Score(Score, Text_color, y=600):
 
     '''What has been my highest score ever? Show me'''
 
     global High_Score
     
-    Font_high_score = pygame.font.Font('assets/Font/Score.ttf', 22)
+    Font_high_score = pygame.font.Font(f'{DIRECTORY}Font/Score.ttf', 40)
 
     if Score > High_Score:
 
         High_Score = Score
 
-        with open('assets/My Score/High_Score', 'w') as Best_score:
+        with open(f'{DIRECTORY}My Score/High_Score', 'w') as Best_score:
             Best_score.write(f'{High_Score}')
 
 
@@ -638,10 +655,13 @@ def Main_game(fly):
 
     Fluttering = fly
     
+    # _____________________________________________
+    # These features are not supported in version N.
     # position of Game over buttons
-    button_position = floor_height
+    # button_position = floor_height
     # High score test box height
-    HI_height = 200
+    # HI_height = 400
+    # _____________________________________________
 
     # pygame.mixer.music.stop()
 
@@ -676,7 +696,7 @@ def Main_game(fly):
                         if Flappy_bird.check_click == False:
 
                             Flappy_bird.check_click = True
-                            Flappy_bird.gravity = -5
+                            Flappy_bird.gravity = -10
                             Audio_Flight.play()
 
                         else:
@@ -698,7 +718,7 @@ def Main_game(fly):
         PLAYERS_GROUP.update()
         
         # Check if bird has hit the ground
-        if Flappy_bird.rect.bottom >= floor_height:
+        if Flappy_bird.rect.bottom >= (floor_height+10):
 
             Game_Status = Colision()
             Fluttering = False
@@ -711,10 +731,10 @@ def Main_game(fly):
             
             if time_now - last_pipe > pipe_frequency:
                 
-                pipe_height = randint(-110, 90)
+                pipe_height = random.randint(-220, 200)
                 
-                bottom_pipe = Pipe((Screen_width+50), (Screen_height/2) + pipe_height, "bottom")
-                top_pipe    = Pipe((Screen_width+50), (Screen_height/2) + pipe_height, "top")
+                bottom_pipe = Pipe((Screen_width+100), (Screen_height/2) + pipe_height, "bottom")
+                top_pipe    = Pipe((Screen_width+100), (Screen_height/2) + pipe_height, "top")
                 
                 PIPELINE.add(bottom_pipe)
                 PIPELINE.add(top_pipe)
@@ -743,15 +763,15 @@ def Main_game(fly):
             Game_Status = Colision()
             
 
-        if Flappy_bird.rect.bottom >= floor_height and Game_Status == False:
+        if Flappy_bird.rect.bottom >= (floor_height+10) and Game_Status == False:
 
-            if HI_height <= 290:
-                HI_height += 10
+            # if HI_height <= 590:
+            #    HI_height += 20
             
-            if button_position >= 350:
-                button_position -= 10
+            #if button_position >= 700:
+            #   button_position -= 20
 
-            Final_Score(Score, Highlight_paint, HI_height)
+            Final_Score(Score, Highlight_paint)
 
             if Menu_button():
 
@@ -759,7 +779,7 @@ def Main_game(fly):
                 Score = Reset_Game()
                 Welcome_Screen('Normal')
             
-            if Falling_Buttons(button_position):
+            if Falling_Buttons():
                 
                 Game_Status = True
                 Score = Reset_Game()
