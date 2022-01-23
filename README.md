@@ -1,7 +1,7 @@
-<h1 align="center">Pink🎀World - Flappy Doge😼</h1>
+<h1 align="center">Pink🎀World</h1>
 <p align="center">
-<img src="https://s4.uupload.ir/files/51f9fnraaml_3vyu.png" width='280'>
-  <h3 align='center'>I am Flappy Doge😽. Have you ever seen a Doge fly in the sky?<br> With your help, I can experience a cool flight. <br><br> 🐍All with Pygame🐍. Pefect and powerful💪🏻</h3><br>
+<img src="https://s6.uupload.ir/files/pink_icon_75wa.png" width='280'>
+  <h3 align='center'>A beautiful Pink World💟. Pleasant effect of flying bird in pink land<br> No one has found this part of the world yet🗺 <br><br> 🐍All with Pygame🐍. Pefect and powerful💪🏻</h3><br>
   
 </p>
   <p align="center">⭐️ Star it | 🔱 Fork it on GitHub </p>
@@ -12,8 +12,8 @@
     <a href="https://www.python.org/">
     	<img src="https://img.shields.io/badge/Language-Python-turquoise" />
     </a>
-    <a href="https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.1">
-      <img src='https://img.shields.io/badge/Release-v12.1-goldenrod'>
+    <a href="https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.2-N">
+      <img src='https://img.shields.io/badge/Release-v12.2N-goldenrod'>
     <a href="https://github.com/Every-Developer/Flappy_Birds/blob/Pink-World/LICENSE">
       <img src="https://img.shields.io/badge/license-MIT License-lightgreen.svg" />
     </a>
@@ -22,7 +22,7 @@
 
 # 💡 What are the requirements of Flappy Bird?💡
       
-- [x] 1. Install [**Python**](https://www.python.org) 3.9.0 or later (<Python 3.9.9> is used). download from
+- [x] 1. Install [**Python**](https://www.python.org) 3.9.0 or later (<Python 3.10.0> is used). download from
 [**here**](https://www.python.org/downloads/) <br> ***Note that Python 3.9.x cannot be used on Windows 7 or earlier**
 <br>
 
@@ -38,32 +38,38 @@
       
 <br>
       
-# 🐣How to install Flappy Doge v12.1?🤔
+# 🐣How to install Pink World v12.2-N?🤔
       
 - [x] 1. **Clone the repository:**
       
   ```
-  git clone https://github.com/Every-Developer/Flappy_Birds --branch v12.1
+  git clone https://github.com/Every-Developer/Flappy_Birds --branch v12.2-N
   ```
-- [ ] Download the desired version from the ***[Releases](https://github.com/Every-Developer/Flappy_Birds/releases)*** section [(*v12.1*)](https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.1)
+- [ ] Download the desired version from the [**Releases**](https://github.com/Every-Developer/Flappy_Birds/releases) section [(*v12.2-N*)](https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.2-N)
 <br>
       
 - [x] 2. **in the Directory run:**
       
   ```
-  python Flappy_Doge.py
+  python Pink_World-N.py
   
-  Flappy Doge.exe
+  Pink World N.exe
   ```      
 
 ## 🖼 Dimensions of the Flappy Doge
       
 | Which one of Flappy Bird? | 🖼Dimensions | 🎞Quality |
 |---|---|---|
-| Flappy_Doge.py | 576*1024 | 1080p or greater⚡ |
-| Flappy_Doge2.py | 288*512 | 720p or lower |
-| **Flappy Doge.exe** | **576*1024** | **1080p**✨ | 
-| Flappy Doge (2).exe | 288*512 | 720p |
+| Pink_World-N.py | 576*1024 | 1080p or greater⚡ |
+| Pink_World-N2.py | 288*512 | 720p or lower |
+| **Pink World N.exe** | **576*1024** | **1080p**✨ | 
+| Pink World N (2).exe | 288*512 | 720p |
+
+<br>
+
+## 💾What is version N?
+> Version N has ✨**no animation**❌ <br>
+> All the features of the main version [(v12.2)](https://github.com/Every-Developer/Flappy_Birds/tree/v12.2) except the animations and shadows are included in this release.
 
 <br>
 
