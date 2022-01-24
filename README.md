@@ -1,6 +1,6 @@
 <h1 align="center">Pink🎀World</h1>
 <p align="center">
-<img src="https://s6.uupload.ir/files/pink_icon_75wa.png" width='280'>
+<img src="https://s6.uupload.ir/files/yellow_pink_icon_2ziz.png" width='280'>
   <h3 align='center'>A beautiful Pink World💟. Pleasant effect of flying bird in pink land<br> No one has found this part of the world yet🗺 <br><br> 🐍All with Pygame🐍. Pefect and powerful💪🏻</h3><br>
   
 </p>
@@ -12,8 +12,8 @@
     <a href="https://www.python.org/">
     	<img src="https://img.shields.io/badge/Language-Python-turquoise" />
     </a>
-    <a href="https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.2-N">
-      <img src='https://img.shields.io/badge/Release-v12.2N-goldenrod'>
+    <a href="https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.2">
+      <img src='https://img.shields.io/badge/Release-v12.2-goldenrod'>
     <a href="https://github.com/Every-Developer/Flappy_Birds/blob/Pink-World/LICENSE">
       <img src="https://img.shields.io/badge/license-MIT License-lightgreen.svg" />
     </a>
@@ -38,38 +38,32 @@
       
 <br>
       
-# 🐣How to install Pink World v12.2-N?🤔
+# 🐣How to install Pink World v12.2?🤔
       
 - [x] 1. **Clone the repository:**
       
   ```
-  git clone https://github.com/Every-Developer/Flappy_Birds --branch v12.2-N
+  git clone https://github.com/Every-Developer/Flappy_Birds --branch v12.2
   ```
-- [ ] Download the desired version from the [**Releases**](https://github.com/Every-Developer/Flappy_Birds/releases) section [(*v12.2-N*)](https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.2-N)
+- [ ] Download the desired version from the [**Releases**](https://github.com/Every-Developer/Flappy_Birds/releases) section [(*v12.2*)](https://github.com/Every-Developer/Flappy_Birds/releases/tag/v12.2)
 <br>
       
 - [x] 2. **in the Directory run:**
       
   ```
-  python Pink_World-N.py
+  python Pink_World.py
   
-  Pink World N.exe
+  Pink World.exe
   ```      
 
-## 🖼 Dimensions of the Flappy Doge
+## 🖼 Dimensions of the Pink World
       
 | Which one of Flappy Bird? | 🖼Dimensions | 🎞Quality |
 |---|---|---|
-| Pink_World-N.py | 576*1024 | 1080p or greater⚡ |
-| Pink_World-N2.py | 288*512 | 720p or lower |
-| **Pink World N.exe** | **576*1024** | **1080p**✨ | 
-| Pink World N (2).exe | 288*512 | 720p |
-
-<br>
-
-## 💾What is version N?
-> Version N has ✨**no animation**❌ <br>
-> All the features of the main version [(v12.2)](https://github.com/Every-Developer/Flappy_Birds/tree/v12.2) except the animations and shadows are included in this release.
+| Pink_World.py | 576*1024 | 1080p or greater⚡ |
+| Pink_World.py | 288*512 | 720p or lower |
+| **Pink World.exe** | **576*1024** | **1080p**✨ | 
+| Pink World (2).exe | 288*512 | 720p |
 
 <br>
 
